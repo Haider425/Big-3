@@ -1,0 +1,898 @@
+---
+title: "The Big Three Era"
+subtitle: "Dominance, Surface, and the Art of Grand Slam Tennis"
+author: "Haider Saleem — Student ID: 100870637"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    theme:
+      version: 5
+      bg:           "#1b1b1f"
+      fg:           "#e8e6e1"
+      primary:      "#2A9D8F"
+      secondary:    "#9a958d"
+      base_font:    {google: "Inter"}
+      heading_font: {google: "Outfit"}
+      code_font:    {google: "JetBrains Mono"}
+      font-size-base: "0.97rem"
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    code_folding: show
+    df_print: paged
+    self_contained: true
+    fig_caption: true
+---
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --col-bg:        #1b1b1f;
+  --col-surface:   #232328;
+  --col-card:      #2a2a30;
+  --col-elevated:  #323238;
+  --col-text:      #e8e6e1;
+  --col-text-mid:  #b0ada5;
+  --col-text-dim:  #7a7770;
+  --col-border:    #333338;
+  --col-border-lt: #3e3e45;
+  --col-teal:      #2A9D8F;
+  --col-teal-soft: rgba(42, 157, 143, 0.10);
+  --col-teal-md:   rgba(42, 157, 143, 0.18);
+  --col-red:       #E63946;
+  --col-amber:     #F4A261;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.20);
+  --shadow-md: 0 4px 16px rgba(0,0,0,.28);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,.35);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 0.97rem;
+  line-height: 1.8;
+  color: var(--col-text);
+  background: var(--col-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.container-fluid.main-container {
+  padding-right: 36px !important;
+  padding-bottom: 80px !important;
+}
+
+#content { max-width: 880px; }
+.fig-body, .figure, div.figure { max-width: 100%; }
+
+
+.tocify-wrapper, #TOC {
+  background: var(--col-surface) !important;
+  border: 1px solid var(--col-border) !important;
+  border-radius: var(--radius-md) !important;
+  padding: 0 !important;
+  font-size: 0.8rem;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  margin-top: 14px;
+}
+
+#TOC { padding: 0 !important; }
+
+#TOC::before {
+  content: 'Contents';
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--col-text-dim);
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid var(--col-border);
+  margin-bottom: 0;
+}
+
+#TOC ul { list-style: none; padding: 0; margin: 0; }
+#TOC li { margin: 0; }
+
+#TOC > ul > li > a {
+  display: block;
+  padding: 9px 20px;
+  color: var(--col-text-mid);
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: all 0.15s ease;
+  line-height: 1.4;
+}
+
+#TOC > ul > li > a:hover {
+  color: var(--col-text);
+  border-left-color: var(--col-teal);
+  background: var(--col-teal-soft);
+  text-decoration: none;
+}
+
+#TOC > ul > li > a.active {
+  color: var(--col-teal);
+  border-left-color: var(--col-teal);
+  background: var(--col-teal-md);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#TOC > ul > li > ul { padding: 0 0 2px; }
+
+#TOC > ul > li > ul > li > a {
+  display: block;
+  padding: 4px 20px 4px 34px;
+  font-size: 0.73rem;
+  font-weight: 400;
+  color: var(--col-text-dim);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: all 0.15s ease;
+  line-height: 1.35;
+}
+
+#TOC > ul > li > ul > li > a:hover,
+#TOC > ul > li > ul > li > a.active {
+  color: var(--col-teal);
+  text-decoration: none;
+}
+
+.tocify-wrapper .tocify-item.active > a,
+.tocify .tocify-item.active > a {
+  background-color: var(--col-teal-md) !important;
+  color: var(--col-teal) !important;
+  border-left: 2px solid var(--col-teal) !important;
+}
+
+
+h1.title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(2.1rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--col-text);
+  line-height: 1.12;
+  margin-bottom: 6px;
+  letter-spacing: -0.025em;
+}
+
+h3.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--col-text-mid);
+  margin-top: 0;
+  margin-bottom: 4px;
+  border: none;
+}
+
+p.author, p.date, .author, .date {
+  font-size: 0.86rem;
+  color: var(--col-text-dim);
+  margin: 2px 0;
+}
+
+
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: var(--col-text);
+  margin-top: 56px;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--col-teal);
+  letter-spacing: -0.015em;
+}
+
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--col-text-mid);
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+
+h3:not(.subtitle) {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--col-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+p { margin-bottom: 1.1rem; }
+a { color: var(--col-teal); text-decoration: none; }
+a:hover { text-decoration: underline; color: #34bfad; }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--col-border);
+  margin: 44px 0;
+}
+
+/* ── Code ── */
+pre, code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.80rem;
+  border-radius: var(--radius-sm);
+}
+
+pre {
+  background: #141416 !important;
+  color: #ccc9c0 !important;
+  padding: 18px 22px !important;
+  border: 1px solid var(--col-border);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+  margin: 18px 0 22px;
+}
+
+code { background: var(--col-elevated); color: #e0a870; padding: 2px 6px; }
+pre code { background: transparent; color: inherit; padding: 0; }
+
+.code-folding-btn, .btn-default {
+  background: var(--col-elevated) !important;
+  border-color: var(--col-border) !important;
+  color: var(--col-text-dim) !important;
+  font-size: 0.72rem !important;
+}
+.code-folding-btn:hover, .btn-default:hover {
+  background: var(--col-border-lt) !important;
+  color: var(--col-text) !important;
+}
+
+/* ── Paged table ── */
+.pagedtable-wrapper { background: var(--col-surface); border-radius: var(--radius-sm); }
+.pagedtable-header-name, .pagedtable-header-type { color: var(--col-text-dim) !important; }
+
+/* ── Figures ── */
+.figure, div.figure { margin: 36px auto !important; text-align: center; max-width: 100%; }
+
+img, svg {
+  max-width: 100% !important; height: auto !important;
+  display: block; margin: 0 auto; border-radius: var(--radius-sm);
+}
+
+p.caption, .figure p.caption {
+  font-size: 0.80rem; color: var(--col-text-dim);
+  text-align: center; font-style: italic; margin-top: 8px;
+}
+
+.fig-header {
+  background: var(--col-card);
+  color: var(--col-text);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  padding: 18px 26px 14px;
+  margin: 48px 0 0;
+  border: 1px solid var(--col-border);
+  border-bottom: none;
+}
+
+.fig-header h2 {
+  margin: 0 0 3px; font-family: 'Inter', sans-serif;
+  font-size: 0.97rem; font-weight: 600; color: var(--col-text);
+}
+
+.fig-header p {
+  margin: 0; font-size: 0.83rem; color: var(--col-text-dim); font-style: italic; line-height: 1.4;
+}
+
+.fig-body {
+  background: var(--col-surface);
+  border: 1px solid var(--col-border);
+  border-top: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  padding: 24px 24px 16px;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.fig-body img, .fig-body svg { margin: 0 auto; display: block; max-width: 100%; }
+
+
+.insight {
+  background: var(--col-teal-soft);
+  border-left: 3px solid var(--col-teal);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 14px 20px;
+  margin: 20px 0 40px;
+  font-size: 0.9rem;
+  color: var(--col-text-mid);
+  line-height: 1.7;
+}
+
+.insight strong { color: var(--col-teal); font-weight: 600; }
+
+/* ── Intro card ── */
+.intro-card {
+  background: var(--col-card);
+  color: var(--col-text-mid);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  margin: 28px 0 40px;
+  line-height: 1.95;
+  box-shadow: var(--shadow-md);
+  font-size: 0.97rem;
+  border: 1px solid var(--col-border);
+}
+
+.intro-card em { color: var(--col-teal); font-style: normal; font-weight: 600; }
+
+
+.stats-banner { display: flex; gap: 14px; margin: 28px 0 12px; flex-wrap: wrap; }
+
+.stat-box {
+  flex: 1; min-width: 130px; background: var(--col-card);
+  border-radius: var(--radius-md); padding: 20px 22px; text-align: center;
+  box-shadow: var(--shadow-sm); border-top: 3px solid var(--col-teal);
+  transition: transform 0.15s, box-shadow 0.15s;
+  border: 1px solid var(--col-border);
+  border-top-width: 3px;
+}
+
+.stat-box:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.stat-box.federer  { border-top-color: var(--col-red); }
+.stat-box.nadal    { border-top-color: var(--col-amber); }
+.stat-box.djokovic { border-top-color: var(--col-teal); }
+.stat-box.total    { border-top-color: var(--col-text-dim); }
+
+.stat-number {
+  font-family: 'Outfit', sans-serif; font-size: 2.2rem;
+  font-weight: 700; color: var(--col-text); line-height: 1;
+  margin-bottom: 5px; letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 0.7rem; color: var(--col-text-dim);
+  text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500;
+}
+
+
+.references a { color: var(--col-teal); }
+.references ul { padding-left: 20px; }
+.references li { margin-bottom: 8px; font-size: 0.92rem; color: var(--col-text-mid); }
+
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--col-bg); }
+::-webkit-scrollbar-thumb { background: var(--col-border-lt); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--col-text-dim); }
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  .container-fluid.main-container { padding-right: 14px !important; }
+  h1.title { font-size: 1.7rem; }
+  .stats-banner { flex-direction: column; }
+  .intro-card { padding: 22px 20px; }
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo       = TRUE,
+  warning    = FALSE,
+  message    = FALSE,
+  fig.width  = 9,
+  fig.height = 5.5,
+  out.width  = "100%",
+  dpi        = 150
+)
+```
+
+---
+
+# Introduction
+
+<div class="intro-card">
+Between 2004 and 2023, men's professional tennis was defined by three players: *Roger Federer*, *Rafael Nadal*, and *Novak Djokovic* collectively known as the "Big Three." Together, they won 66 Grand Slam titles, rewrote virtually every major record in the sport, and maintained a grip on the ATP rankings almost without interruption for two decades.
+
+This report explores that era using ATP match data from 2004 to 2023. Tennis was chosen because the Big Three era offers a uniquely data-rich case study in sustained athletic dominance across surfaces, tournaments, and time. How dominant were the Big Three compared to their peers? Did surface type shape who won? How did their Grand Slam campaigns unfold round by round, and which tournaments defined each player's legacy?
+
+The dataset contains over 39,000 ATP match records including tournament metadata, player rankings, ranking points, surfaces, and scores. Data manipulation was performed to filter missing records, engineer year and player category variables, aggregate win counts, and join nationality data for geographic visualisation. The resulting graphics trace the arc of an extraordinary era, one unlikely to be repeated in professional sport.
+</div>
+
+```{r stats-banner, echo=FALSE, results='asis'}
+cat('
+<div class="stats-banner">
+<div class="stat-box federer">
+<div class="stat-number">1,151</div>
+<div class="stat-label">Federer Wins</div>
+</div>
+<div class="stat-box nadal">
+<div class="stat-number">1,007</div>
+<div class="stat-label">Nadal Wins</div>
+</div>
+<div class="stat-box djokovic">
+<div class="stat-number">1,065</div>
+<div class="stat-label">Djokovic Wins</div>
+</div>
+<div class="stat-box total">
+<div class="stat-number">66</div>
+<div class="stat-label">Grand Slams Combined</div>
+</div>
+</div>
+')
+```
+
+---
+
+# Setup & Libraries
+
+```{r libraries}
+library(tidyverse)
+library(scales)
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(ggridges)
+library(ggtext)
+library(glue)
+```
+
+---
+
+# Data Loading & Manipulation
+
+```{r load-data}
+atp_raw <- read_csv("atp_tennis_clean-final.csv")
+
+big3_colours <- c(
+  "Federer"  = "#E63946",
+  "Nadal"    = "#F4A261",
+  "Djokovic" = "#2A9D8F",
+  "Other"    = "#636369"
+)
+
+# Shared dark theme applied to all ggplots
+dark_plot <- theme(
+  plot.background   = element_rect(fill = "#232328", colour = NA),
+  panel.background  = element_rect(fill = "#232328", colour = NA),
+  text              = element_text(colour = "#e8e6e1"),
+  axis.text         = element_text(colour = "#b0ada5"),
+  axis.title        = element_text(colour = "#ccc9c0"),
+  plot.title        = element_text(colour = "#e8e6e1"),
+  plot.subtitle     = element_text(colour = "#7a7770"),
+  plot.caption      = element_text(colour = "#5a5955"),
+  legend.background = element_rect(fill = "transparent", colour = NA),
+  legend.key        = element_rect(fill = "transparent", colour = NA),
+  legend.text       = element_text(colour = "#b0ada5"),
+  legend.title      = element_text(colour = "#ccc9c0")
+)
+
+atp <- atp_raw %>%
+  mutate(
+    Date   = as.Date(Date),
+    Year   = as.integer(format(Date, "%Y")),
+    P1_won = (Player_1 == Winner),
+    Pts_1  = as.numeric(Pts_1),
+    Pts_2  = as.numeric(Pts_2),
+    Rank_1 = as.numeric(Rank_1),
+    Rank_2 = as.numeric(Rank_2)
+  ) %>%
+  filter(Pts_1 > 0, Pts_2 > 0, Year >= 2004, Year <= 2023) %>%
+  mutate(
+    Big3 = case_when(
+      Winner == "Federer R."  ~ "Federer",
+      Winner == "Nadal R."    ~ "Nadal",
+      Winner == "Djokovic N." ~ "Djokovic",
+      TRUE                    ~ "Other"
+    ),
+    Surface = factor(Surface, levels = c("Hard", "Clay", "Grass"))
+  )
+
+glimpse(atp)
+```
+
+```{r win-counts}
+wins_by_player_year <- atp %>%
+  group_by(Year, Big3) %>%
+  summarise(Wins = n(), .groups = "drop")
+
+top_players <- atp %>%
+  group_by(Winner) %>%
+  summarise(Wins = n(), .groups = "drop") %>%
+  arrange(desc(Wins)) %>%
+  slice_head(n = 20) %>%
+  mutate(
+    Category = case_when(
+      Winner == "Federer R."  ~ "Federer",
+      Winner == "Nadal R."    ~ "Nadal",
+      Winner == "Djokovic N." ~ "Djokovic",
+      TRUE                    ~ "Other"
+    )
+  )
+
+big3_surface <- atp %>%
+  filter(Big3 != "Other") %>%
+  group_by(Big3, Surface) %>%
+  summarise(Wins = n(), .groups = "drop") %>%
+  group_by(Big3) %>%
+  mutate(WinPct = Wins / sum(Wins))
+
+country_wins <- atp %>%
+  mutate(
+    Country = case_when(
+      str_detect(Winner, "Federer")    ~ "CHE",
+      str_detect(Winner, "Nadal")      ~ "ESP",
+      str_detect(Winner, "Djokovic")   ~ "SRB",
+      str_detect(Winner, "Murray")     ~ "GBR",
+      str_detect(Winner, "Ferrer")     ~ "ESP",
+      str_detect(Winner, "Roddick")    ~ "USA",
+      str_detect(Winner, "Hewitt")     ~ "AUS",
+      str_detect(Winner, "Berdych")    ~ "CZE",
+      str_detect(Winner, "Wawrinka")   ~ "CHE",
+      str_detect(Winner, "Zverev")     ~ "DEU",
+      str_detect(Winner, "Gasquet")    ~ "FRA",
+      str_detect(Winner, "Monfils")    ~ "FRA",
+      str_detect(Winner, "Tsitsipas")  ~ "GRC",
+      str_detect(Winner, "Medvedev")   ~ "RUS",
+      str_detect(Winner, "Alcaraz")    ~ "ESP",
+      str_detect(Winner, "Cilic")      ~ "HRV",
+      str_detect(Winner, "Verdasco")   ~ "ESP",
+      str_detect(Winner, "Robredo")    ~ "ESP",
+      str_detect(Winner, "Davydenko")  ~ "RUS",
+      str_detect(Winner, "Lopez")      ~ "ESP",
+      str_detect(Winner, "Isner")      ~ "USA",
+      str_detect(Winner, "Simon")      ~ "FRA",
+      str_detect(Winner, "Youzhny")    ~ "RUS",
+      str_detect(Winner, "Nalbandian") ~ "ARG",
+      str_detect(Winner, "Coria")      ~ "ARG",
+      str_detect(Winner, "Safin")      ~ "RUS",
+      str_detect(Winner, "Haas")       ~ "DEU",
+      str_detect(Winner, "Stepanek")   ~ "CZE",
+      str_detect(Winner, "Thiem")      ~ "AUT",
+      str_detect(Winner, "Berrettini") ~ "ITA",
+      str_detect(Winner, "Sinner")     ~ "ITA",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  filter(!is.na(Country)) %>%
+  group_by(Country) %>%
+  summarise(Wins = n(), .groups = "drop")
+```
+
+---
+
+# Figures
+
+<div class="fig-header">
+  <h2>Figure 1 — Choropleth Map: ATP Wins by Player Nationality</h2>
+  <p>Which countries produced the most ATP match winners across the Big Three era?</p>
+</div>
+<div class="fig-body">
+```{r map, fig.height=4.5}
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+world_wins <- world %>%
+  left_join(country_wins, by = c("iso_a3" = "Country")) %>%
+  mutate(Wins = replace_na(Wins, 0))
+
+ggplot(world_wins) +
+  geom_sf(aes(fill = Wins), colour = "#333338", linewidth = 0.15) +
+  scale_fill_gradient2(
+    low = "#2a2a30", mid = "#3e8a7c", high = "#7FDBCA",
+    midpoint = 500, na.value = "#28282e",
+    name = "Match Wins", labels = label_comma()
+  ) +
+  coord_sf(xlim = c(-130, 160), ylim = c(-55, 75), expand = FALSE) +
+  labs(
+    title    = "ATP Match Wins by Player Nationality (2004–2023)",
+    subtitle = "Spain, Serbia, and Switzerland dominate — three countries, three legends",
+    caption  = "Source: Kaggle ATP Tennis Dataset"
+  ) +
+  theme_void() +
+  theme(
+    plot.title       = element_text(size = 13, face = "bold", hjust = 0.5, margin = margin(b = 4), colour = "#e8e6e1"),
+    plot.subtitle    = element_text(size = 10, hjust = 0.5, colour = "#7a7770", margin = margin(b = 8)),
+    legend.position  = "bottom",
+    legend.key.width = unit(2.2, "cm"),
+    legend.title     = element_text(size = 9, colour = "#b0ada5"),
+    legend.text      = element_text(size = 8, colour = "#b0ada5"),
+    plot.caption     = element_text(size = 7.5, colour = "#5a5955", margin = margin(t = 6)),
+    plot.background  = element_rect(fill = "#232328", colour = NA),
+    plot.margin      = margin(10, 10, 10, 10)
+  ) + dark_plot
+```
+</div>
+
+<div class="insight">
+<strong>Key insight:</strong> Spain leads decisively, driven not only by Nadal but a deep bench of top-100 players including Ferrer, Verdasco, and Robredo. Switzerland punches far above its weight thanks to Federer and Wawrinka, while Serbia's win count is almost entirely attributable to Djokovic alone.
+</div>
+
+---
+
+<div class="fig-header">
+  <h2>Figure 2 — Lollipop Chart: Top 20 Players by Total Wins</h2>
+  <p>Just how far ahead of the field were Federer, Nadal, and Djokovic?</p>
+</div>
+<div class="fig-body">
+```{r lollipop, fig.height=6}
+top_players %>%
+  mutate(Winner = fct_reorder(Winner, Wins)) %>%
+  ggplot(aes(x = Winner, y = Wins, colour = Category)) +
+  geom_segment(aes(xend = Winner, y = 0, yend = Wins), linewidth = 1.1) +
+  geom_point(size = 4) +
+  scale_colour_manual(values = big3_colours, name = NULL) +
+  scale_y_continuous(labels = label_comma(), expand = expansion(mult = c(0, 0.06))) +
+  coord_flip() +
+  labs(
+    title    = "Top 20 ATP Players by Total Match Wins (2004–2023)",
+    subtitle = "The Big Three are in a class of their own",
+    x = NULL, y = "Total Wins", caption = "Source: Kaggle ATP Tennis Dataset"
+  ) +
+  theme_classic() +
+  theme(
+    plot.title         = element_text(size = 13, face = "bold"),
+    plot.subtitle      = element_text(size = 10),
+    legend.position    = "top",
+    axis.text.y        = element_text(size = 9.5),
+    axis.text.x        = element_text(size = 9),
+    panel.grid.major.x = element_line(colour = "#333338", linewidth = 0.5),
+    axis.line          = element_line(colour = "#3e3e45"),
+    axis.ticks         = element_line(colour = "#3e3e45"),
+    plot.margin        = margin(10, 16, 10, 10)
+  ) +
+  dark_plot
+```
+</div>
+
+<div class="insight">
+<strong>Key insight:</strong> Federer, Djokovic, and Nadal sit 400 to 700 wins clear of fourth-placed David Ferrer. No other three players from the same generation have achieved such a combined lead over the field.
+</div>
+
+---
+
+<div class="fig-header">
+  <h2>Figure 3 — Line Chart: Season Win Totals Over Time</h2>
+  <p>How did each player's annual win count rise and fall across two decades?</p>
+</div>
+<div class="fig-body">
+```{r line-chart}
+wins_by_player_year %>%
+  filter(Big3 != "Other") %>%
+  ggplot(aes(x = Year, y = Wins, colour = Big3, group = Big3)) +
+  geom_line(linewidth = 1.5) +
+  geom_point(size = 3) +
+  scale_colour_manual(values = big3_colours, name = NULL) +
+  scale_x_continuous(breaks = seq(2004, 2023, by = 2)) +
+  scale_y_continuous(labels = label_comma(), expand = expansion(mult = c(0.02, 0.08))) +
+  labs(
+    title    = "Annual Match Wins — Federer, Nadal, and Djokovic (2004–2023)",
+    subtitle = "Each line traces one player's season win tally over two decades",
+    x = "Year", y = "Match Wins", caption = "Source: Kaggle ATP Tennis Dataset"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title       = element_text(size = 13, face = "bold"),
+    plot.subtitle    = element_text(size = 10),
+    legend.position  = "top",
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(colour = "#2e2e34"),
+    plot.margin      = margin(10, 16, 10, 10)
+  ) +
+  dark_plot
+```
+</div>
+
+<div class="insight">
+<strong>Key insight:</strong> Federer peaks earliest, around 2006 to 2007, before a gradual decline. Nadal's line is more volatile, dipping sharply during injury years. Djokovic's is the most sustained, climbing steadily from 2011 and remaining near the top through 2023.
+</div>
+
+---
+
+<div class="fig-header">
+  <h2>Figure 4 — Heatmap: Win Share by Surface</h2>
+  <p>Each player is famously associated with a surface — does the data confirm it?</p>
+</div>
+<div class="fig-body">
+```{r heatmap, fig.height=3.2}
+big3_surface %>%
+  ggplot(aes(x = Surface, y = Big3, fill = WinPct)) +
+  geom_tile(colour = "#232328", linewidth = 2) +
+  geom_text(aes(label = percent(WinPct, accuracy = 0.1)),
+            size = 5.5, fontface = "bold", colour = "black") +
+  scale_fill_distiller(palette = "YlGnBu", direction = 1,
+                       name = "Share of Wins", labels = label_percent()) +
+  labs(
+    title    = "Share of Each Player's Wins by Surface",
+    subtitle = "Nadal's clay dominance is the most extreme surface specialisation in the data",
+    x = NULL, y = NULL, caption = "Source: Kaggle ATP Tennis Dataset"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title      = element_text(size = 13, face = "bold"),
+    plot.subtitle   = element_text(size = 10),
+    axis.text       = element_text(size = 12),
+    legend.position = "right",
+    panel.grid      = element_blank(),
+    plot.margin     = margin(10, 10, 10, 10)
+  ) +
+  dark_plot
+```
+</div>
+
+<div class="insight">
+<strong>Key insight:</strong> Over 55% of Nadal's wins came on clay, the most extreme surface concentration in the dataset. Federer leaned toward hard courts later in his career, while Djokovic is the most evenly distributed, confirming his reputation as the sport's most complete all-court player.
+</div>
+
+---
+
+<div class="fig-header">
+  <h2>Figure 5 — Scatter Plot: Season Wins vs. Average Opponent Ranking</h2>
+  <p>Did the Big Three win more when facing weaker draws, or did they dominate regardless?</p>
+</div>
+<div class="fig-body">
+```{r scatter}
+scatter_data <- atp %>%
+  filter(Big3 != "Other") %>%
+  group_by(Big3, Year) %>%
+  summarise(Wins = n(), AvgOppRank = mean(Rank_2, na.rm = TRUE), .groups = "drop")
+
+ggplot(scatter_data, aes(x = AvgOppRank, y = Wins, colour = Big3, size = Year)) +
+  geom_point(alpha = 0.78) +
+  geom_smooth(aes(group = Big3), method = "lm", se = FALSE,
+              linewidth = 0.9, linetype = "dashed") +
+  scale_colour_manual(values = big3_colours, name = NULL) +
+  scale_size_continuous(range = c(2.5, 7), name = "Year") +
+  scale_x_continuous(labels = label_comma()) +
+  scale_y_continuous(labels = label_comma()) +
+  labs(
+    title    = "Season Wins vs. Average Opponent Ranking — Big Three",
+    subtitle = "Each point = one player-season; point size encodes year (larger = more recent)",
+    x = "Avg. Opponent Ranking (lower = tougher draw)", y = "Total Wins That Season",
+    caption  = "Source: Kaggle ATP Tennis Dataset"
+  ) +
+  theme_light() +
+  theme(
+    plot.title       = element_text(size = 13, face = "bold"),
+    plot.subtitle    = element_text(size = 10),
+    legend.position  = "right",
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(colour = "#2e2e34"),
+    panel.border     = element_rect(colour = "#3e3e45"),
+    plot.margin      = margin(10, 16, 10, 10)
+  ) +
+  dark_plot
+```
+</div>
+
+<div class="insight">
+<strong>Key insight:</strong> All three maintained high win totals regardless of opponent rank, confirming consistent depth of competition. Djokovic's seasons cluster tightly at high win counts, while Federer's later seasons show fewer wins paired with a more selective schedule.
+</div>
+
+---
+
+<div class="fig-header">
+  <h2>Figure 6 — Ridgeline Plot: Distribution of Wins Across Years</h2>
+  <p>When did each player's peak years cluster? &nbsp;<em style="color:#3ecfb4; font-style:normal;">(Novel — ggridges)</em></p>
+</div>
+<div class="fig-body">
+```{r ridgeline, fig.height=5}
+ridge_data <- atp %>%
+  filter(Big3 != "Other") %>%
+  group_by(Big3, Year) %>%
+  summarise(Wins = n(), .groups = "drop") %>%
+  ungroup() %>%
+  tidyr::uncount(Wins)
+
+ggplot(ridge_data, aes(x = Year, y = Big3, fill = Big3, colour = Big3)) +
+  ggridges::geom_density_ridges(
+    alpha = 0.7, scale = 1.4, rel_min_height = 0.008,
+    bandwidth = 1.2
+  ) +
+  scale_fill_manual(values = big3_colours, guide = "none") +
+  scale_colour_manual(values = big3_colours, guide = "none") +
+  scale_x_continuous(breaks = seq(2004, 2023, by = 2)) +
+  scale_y_discrete(expand = expansion(add = c(0.3, 1.2))) +
+  labs(
+    title    = "Distribution of Match Wins Across Years — The Big Three",
+    subtitle = "Each ridge shows when a player's wins were most concentrated  |  Library: ggridges (novel — not covered in class)",
+    x = "Year", y = NULL, caption = "Source: Kaggle ATP Tennis Dataset"
+  ) +
+  theme_ridges(grid = TRUE, center_axis_labels = TRUE) +
+  theme(
+    plot.title       = element_text(size = 13, face = "bold"),
+    plot.subtitle    = element_text(size = 10),
+    axis.text.y      = element_text(size = 11, face = "bold"),
+    panel.grid.major = element_line(colour = "#2e2e34"),
+    plot.margin      = margin(10, 16, 10, 10)
+  ) +
+  dark_plot
+```
+</div>
+
+<div class="insight">
+<strong>Key insight:</strong> Federer's ridge peaks sharply around 2005 to 2007. Nadal's distribution is broader, leaning toward his prime clay years. Djokovic's ridge is the widest and most right-shifted, reflecting sustained output well into the 2020s.
+</div>
+
+---
+
+<div class="fig-header">
+  <h2>Figure 7 — Faceted Bar Chart: Grand Slam Wins by Round</h2>
+  <p>How did each player's win volume distribute across Grand Slam rounds?</p>
+</div>
+<div class="fig-body">
+```{r gs-bar, fig.height=6}
+gs_bar_data <- atp %>%
+  filter(Series == "Grand Slam", Big3 != "Other") %>%
+  mutate(Round = factor(Round,
+    levels = c("1st Round","2nd Round","3rd Round","4th Round",
+               "Quarterfinals","Semifinals","The Final"))) %>%
+  count(Big3, Round) %>%
+  filter(!is.na(Round))
+
+ggplot(gs_bar_data, aes(x = Round, y = n, fill = Big3)) +
+  geom_col(width = 0.68) +
+  geom_text(aes(label = n), vjust = -0.5, size = 3.2, fontface = "bold", colour = "#b0ada5") +
+  facet_wrap(~ Big3, ncol = 1) +
+  scale_fill_manual(values = big3_colours, guide = "none") +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.15))) +
+  scale_x_discrete(labels = c(
+    "1st Round" = "R1", "2nd Round" = "R2", "3rd Round" = "R3",
+    "4th Round" = "R4", "Quarterfinals" = "QF", "Semifinals" = "SF", "The Final" = "F"
+  )) +
+  labs(
+    title    = "Grand Slam Match Wins by Round — The Big Three",
+    subtitle = "Faceted by player; bars show total wins accumulated at each stage (2004–2023)",
+    x = NULL, y = "Match Wins", caption = "Source: Kaggle ATP Tennis Dataset"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title         = element_text(size = 13, face = "bold"),
+    plot.subtitle      = element_text(size = 10),
+    strip.text         = element_text(face = "bold", size = 11, colour = "#e8e6e1"),
+    strip.background   = element_rect(fill = "#2a2a30", colour = NA),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor   = element_blank(),
+    panel.grid.major.y = element_line(colour = "#2e2e34"),
+    plot.margin        = margin(10, 16, 10, 10)
+  ) +
+  dark_plot
+```
+</div>
+
+<div class="insight">
+<strong>Key insight:</strong> All three show the expected funnel, with many early-round wins tapering toward the final. Djokovic's Final bar is the tallest, consistent with his record 24 Grand Slam titles. Nadal's early-round counts are lower but his late-round win rate remains elite.
+</div>
+
+---
+
+# References
+
+<div class="references">
+
+- ATP Tennis Dataset (2000–2026): https://www.kaggle.com/datasets/dissfya/atp-tennis-2000-2023daily-pull/data
+- rnaturalearth package: https://cran.r-project.org/web/packages/rnaturalearth/readme/README.html
+- ggridges package: https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html
+- scales package: https://scales.r-lib.org/
+
+</div>
+
+---
+
+# AI Prompts
+
+The following prompts were used with AI tools for code optimisation only:
+
+- *"How do I use left_join to merge an sf world object with a data frame by ISO country code?"*
+- *"How do I use ggridges geom_density_ridges with uncounted win data to show temporal distribution?"*
+- *"What does scale_fill_distiller do differently from scale_fill_gradient2?"*
+- *"How do I add geom_text labels above geom_col bars in a faceted ggplot?"*
+- *"How do I prevent horizontal overflow in an R Notebook HTML output?"*
